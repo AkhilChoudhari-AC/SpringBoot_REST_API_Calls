@@ -14,7 +14,11 @@ public class HelloRestController {
     @RequestMapping(value = {"/query"}, method = RequestMethod.GET)
     public String sayHello(@RequestParam(value = "name") String name) {
         return "Hello " + name + " !";
-
     }
+    @GetMapping("/params/{name}")
+    public String sayHelloParam(@PathVariable String name) {
+        return "Hello " + name + " !";
+    }
+
 }
 
