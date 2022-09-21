@@ -7,8 +7,14 @@ import org.springframework.web.bind.annotation.*;
 public class HelloRestController {
 
     @RequestMapping(value = {"", "/", "/home"})
-    public String sayHello () {
+    public String sayHello() {
 
         return "Hello from Akhil Choudhari";
     }
+
+    @RequestMapping(value = {"/query"}, method = RequestMethod.GET)
+    public String sayHello(@RequestParam(value = "name") String name) {
+        return "Hello " + name + " !";
+    }
 }
+
