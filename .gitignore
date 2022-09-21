@@ -12,6 +12,7 @@ target/
 .settings
 .springBeans
 .sts4-cache
+Day-2_REST_API.iml
 
 ### IntelliJ IDEA ###
 .idea
