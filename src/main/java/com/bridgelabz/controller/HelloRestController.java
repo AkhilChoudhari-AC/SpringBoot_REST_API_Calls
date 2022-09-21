@@ -8,8 +8,7 @@ public class HelloRestController {
 
     @RequestMapping(value = {"", "/", "/home"})
     public String sayHello () {
+
         return "Hello from Akhil Choudhari";
     }
-
-
 }
